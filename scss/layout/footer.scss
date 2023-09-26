@@ -1,0 +1,39 @@
+footer {
+    background-color:$background-footer;
+    color: $color-fuente-footer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lincks{
+    ul{
+      display: flex;
+      gap: 100px;
+      list-style: none;
+      padding-right: 1.875rem;
+      padding-left: 1.87rem;
+      li{
+          
+          align-items: center;
+          a{
+              align-items: center;
+              text-decoration: none;
+              color: $color-fuente-footer;
+              font-size: 1;
+              
+              &:hover{
+                  color: rgba(142, 237, 9, 0.707);
+              }
+          }
+
+      }
+      
+  }
+  }
+  .redesSociales {
+    margin-left: 40px;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+  }

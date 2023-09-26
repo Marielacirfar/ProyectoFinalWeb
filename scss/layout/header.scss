@@ -1,0 +1,32 @@
+header{
+    //@include flex(row, nowrap, space-between, center, 30px);
+    display: flex; 
+    justify-content: space-between;   
+    background-color: $background-principal;
+    color: $color-fuentes-principal;
+    padding: 40px 0;
+    
+    .navBar{
+            
+            gap: 200px;
+            list-style: none;
+            padding-right: 1.875rem;
+            padding-left: 1.87rem;
+            li{
+                a{
+                    align-items: center;
+                    text-decoration: none;
+                    color: $color-fuentes-principal;
+                    font-size: 1.5625rem;
+                    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    &:hover{
+                        color: rgba(14, 1, 9, 0.707);
+                    }
+                }
+
+            
+            
+        }
+    }
+        
+}

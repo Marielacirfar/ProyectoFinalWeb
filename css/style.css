@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffecaf;
+  color: #d962a3;
+  padding: 40px 0;
+}
+header .navBar {
+  gap: 200px;
+  list-style: none;
+  padding-right: 1.875rem;
+  padding-left: 1.87rem;
+}
+header .navBar li a {
+  align-items: center;
+  text-decoration: none;
+  color: #d962a3;
+  font-size: 1.5625rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+header .navBar li a:hover {
+  color: rgba(14, 1, 9, 0.707);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lincks ul {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  padding-right: 1.875rem;
+  padding-left: 1.87rem;
+}
+.lincks ul li {
+  align-items: center;
+}
+.lincks ul li a {
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1;
+}
+.lincks ul li a:hover {
+  color: rgba(142, 237, 9, 0.707);
+}
+
+.redesSociales {
+  margin-left: 40px;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+.ofertas-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-1 {
+  grid-column: 1/-1;
+  background: radial-gradient(circle, rgb(218, 224, 81) 0%, rgb(230, 176, 12) 35%, rgb(255, 76, 0) 100%);
+  color: #d962a3;
+  padding: 40px;
+  text-align: center;
+}
+
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: radial-gradient(circle, rgb(218, 224, 81) 0%, rgb(230, 176, 12) 35%, rgb(255, 76, 0) 100%);
+  padding: 20px;
+}
+
+.section-2 img,
+.section-3 img,
+.section-4 img,
+.section-5 img {
+  max-width: 80%;
+}
+
+.sectionPrincipal {
+  background-image: url(../assets/sol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 31.25rem;
+}
+.sectionPrincipal h1 {
+  text-align: center;
+}
+
+.texto {
+  text-align: center;
+}
+
+.sectionSegunda {
+  background: radial-gradient(circle, rgb(218, 224, 81) 0%, rgb(230, 176, 12) 35%, rgb(255, 76, 0) 100%);
+}
+.sectionSegunda h2 {
+  color: #d962a3;
+  text-align: center;
+}
+
+.tienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  align-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+.sectionContacto {
+  background-image: url(../assets/contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 31.25rem;
+}
+
+.sectionContacto h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+form fieldset {
+  padding: 20px;
+  margin: 20px;
+}
+form fieldset legend {
+  font-size: large;
+}
+
+.seccionPrincipal {
+  background: radial-gradient(circle, rgb(218, 224, 81) 0%, rgb(230, 176, 12) 35%, rgb(255, 76, 0) 100%);
+  width: 100%;
+  height: auto;
+}
+
+.seccionPrincipal h1 {
+  text-align: center;
+  color: #d962a3;
+}
+
+.seccionPrincipal img {
+  float: left;
+  border-radius: 30%;
+  width: 350px;
+  margin-right: 30px;
+}
+
+.textoNosotros {
+  font-size: large;
+  color: white;
+  padding: 10px;
+}
+
+h2 {
+  font-family: cursive;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+.principal {
+  background: radial-gradient(circle, rgb(218, 224, 81) 0%, rgb(230, 176, 12) 35%, rgb(255, 76, 0) 100%);
+  text-align: center;
+}
+
+button {
+  background-color: #3b3ef1;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 40px 0;
+  }
+  header .navBar {
+    display: flex;
+    gap: 100px;
+    padding-right: 1.875rem;
+    padding-left: 1.87rem;
+  }
+  header .navBar li a {
+    font-size: 1.5625rem;
+  }
+  footer {
+    padding: auto;
+  }
+  footer .lincks ul {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+  header .navBar {
+    display: flex;
+    gap: 50px;
+    padding-right: 1.875rem;
+    padding-left: 1.87rem;
+  }
+  header .navBar li a {
+    font-size: 1.5625rem;
+  }
+  .tienda,
+  .producto {
+    height: auto;
+  }
+  .seccionPrincipal,
+  .textoNosotros {
+    height: auto;
+  }
+  footer {
+    padding: 5px;
+  }
+  footer .lincks ul {
+    display: contents;
+    gap: 5;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 425px) {
+  header {
+    flex-direction: row;
+    padding: 5px 0;
+  }
+  .navBar {
+    gap: 5px;
+    padding-right: none;
+    padding-left: none;
+  }
+  .navBar li a {
+    font-size: 1.5625rem;
+  }
+  .sectionSegunda h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .tienda,
+  .producto {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    margin: 10px;
+  }
+  footer {
+    padding: 5px;
+  }
+  footer .lincks ul {
+    display: contents;
+    gap: 5;
+    padding-right: 0.3125rem;
+    padding-left: 0.3125rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
